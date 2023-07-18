@@ -34,7 +34,7 @@ app.post('/multiply', (req, res) => {
   
 });
 
-app.use(express.json())
+
 app.listen(port,()=>{
     console.log('Server started')
 })
