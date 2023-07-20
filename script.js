@@ -3,6 +3,7 @@ let app = express()
 let port = process.env.port || 5000;
 
 app.use(express.static(__dirname +'/'));
+
 app.use(express.json());
 
 app.get('/', (req,res)=>{
