@@ -30,8 +30,8 @@ app.get("/addTwoNumbers",(req,res)=>{
 app.post('/multiply', (req, res) => {
     
   const { num1, num2 } = req.body;
-    const result = num1 * num2;
-    res.json({ result });
+  const result = num1 * num2;
+   res.json({ result });
   
 });
 
