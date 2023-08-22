@@ -37,13 +37,24 @@ function postCat(cat){
 }
 
 function getAllCats(){
-    $.get('/api/cats', (response)=>{
-        // response's data is in array format, so we can use it
+    $.get('/api/cat', (response)=>{
+       
         if (response.statusCode === 200) {
             addCards(response.data);
         }
     });
 }
+function deleteCat(_id) {
+    $.ajax({
+      url: `/api/cat/${_id}`,
+      type: 'DELETE',
+      success: (result)=>{
+        if (result.statusCode === 201) {
+            alert('delete post successful');
+        }
+    }
+    });
+  }
 
 $(document).ready(function(){
     $('.materialboxed').materialbox();

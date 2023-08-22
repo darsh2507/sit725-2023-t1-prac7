@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "script.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "test":"mocha --reporter spec",
+    "start": "nodemon script.js"
   },
   "repository": {
     "type": "git",
@@ -16,10 +17,13 @@
   },
   "homepage": "https://github.com/darsh2507/sit725-2023-t1-prac2#readme",
   "dependencies": {
+    "chai": "^4.3.7",
     "expres": "^0.0.5",
     "express": "^4.18.2",
+    "mocha": "^10.2.0",
     "mongodb": "^4.4.1",
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "request": "^2.88.2"
   },
   "description": ""
 }
