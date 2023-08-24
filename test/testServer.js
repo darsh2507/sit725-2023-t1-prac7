@@ -38,9 +38,7 @@ const catData = {
         json: catData
        
       },
-     
-        
-     
+      done()
     );
   });
 });
@@ -54,7 +52,6 @@ describe("Delete function Test", function() {
           url: 'http://localhost:3000/api/cat/${catId}'
         },
         done()
-        
       );
     });
   });
