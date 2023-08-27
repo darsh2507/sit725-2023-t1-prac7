@@ -45,11 +45,11 @@ const catData = {
 
 describe("Delete function Test", function() {
     it('returns status code of 200', function(done) {
-      const catId = '1'; 
+      const Id = '1'; 
   
       request.delete(
         {
-          url: 'http://localhost:3000/api/cat/${catId}'
+          url: 'http://localhost:3000/api/cat/${Id}'
         },
         done()
       );
