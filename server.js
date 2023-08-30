@@ -56,6 +56,11 @@ function deleteCat(_id) {
     });
   }
 
+  let socket = io();
+socket.on('number',(msg)=>{
+    console.log('Random Number :'+msg)
+})
+
 $(document).ready(function(){
     $('.materialboxed').materialbox();
     $('#formSubmit').click(()=>{
