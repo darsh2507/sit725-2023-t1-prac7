@@ -4,12 +4,12 @@ const request = require("request")
 describe("Get Function Test", function(){
     it('returns statuscode of 200',  function(done){
         request("http://localhost:3000/api/cat",function(a,b,c){
-            console.log("arguments[0]")
-            console.log(arguments[0]);
-            console.log("arguments[1]")
-            console.log(arguments[1])
-            console.log("arguments[2")
-            console.log(arguments[2])
+            // console.log("arguments[0]")
+            // console.log(arguments[0]);
+            // console.log("arguments[1]")
+            // console.log(arguments[1])
+            // console.log("arguments[2")
+            // console.log(arguments[2])
             let resp = JSON.parse(c)
             expect(resp.statusCode).to.equal(200);
             done()
@@ -56,6 +56,7 @@ describe("Delete function Test", function() {
     });
   });
   
+
  
   
   
